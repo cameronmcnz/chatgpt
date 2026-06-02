@@ -1,0 +1,84 @@
+---
+layout: default
+---
+
+{% assign day_folder = page.url | split: '/' | slice: 1, 1 | first %}
+{% assign day_index_path = day_folder | append: '/index.md' %}
+{% assign topics = site.pages | where_exp: "p", "p.path contains day_folder" | where_exp: "p", "p.path contains '.md'" | where_exp: "p", "p.path != day_index_path" | sort: "path" %}
+{% assign day_hubs = site.pages | where_exp: "p", "p.path contains 'day-0'" | where_exp: "p", "p.path contains '/index.md'" | sort: "path" %}
+
+<section class="hero-wrap hero-small py-5">
+  <div class="container py-4">
+    <span class="badge badge-brand rounded-pill mb-3">{{ page.day_label | default: "Course Day" }}</span>
+    <h1 class="display-5 fw-bold mb-3">{{ page.title }}</h1>
+    <p class="lead text-white-75 mb-0">{{ page.intro | default: page.description | default: page.excerpt }}</p>
+  </div>
+</section>
+
+<section class="py-5 section-space">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-8">
+        <div class="card card-soft reveal-up">
+          <div class="card-body p-4">
+            <h2 class="h4 mb-3"><i class="lni lni-target me-2"></i>Learning objectives</h2>
+            <ul class="list-unstyled d-grid gap-2 mb-0">
+              {% for item in page.learning_objectives %}
+                <li><i class="lni lni-checkmark-circle text-cyan me-2"></i>{{ item }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card card-soft h-100 reveal-up">
+          <div class="card-body p-4">
+            <h2 class="h5 mb-3"><i class="lni lni-bulb me-2"></i>Mini project</h2>
+            <p class="mb-0">{{ page.mini_project }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pb-5 section-space">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-end flex-wrap gap-2 mb-3">
+      <h2 class="h3 mb-0">Topics covered</h2>
+      <span class="text-muted small">{{ topics.size }} lessons</span>
+    </div>
+    <div class="row g-4">
+      {% for topic in topics %}
+        <div class="col-md-6 reveal-up">
+          {% include topic-card.html item=topic %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="pb-5">
+  <div class="container">
+    <div class="d-flex flex-wrap justify-content-between gap-2">
+      {% assign current_index = -1 %}
+      {% for d in day_hubs %}
+        {% if d.url == page.url %}
+          {% assign current_index = forloop.index0 %}
+        {% endif %}
+      {% endfor %}
+      {% if current_index > 0 %}
+        {% assign prev_index = current_index | minus: 1 %}
+        <a class="btn btn-outline-brand" href="{{ day_hubs[prev_index].url | relative_url }}"><i class="lni lni-arrow-left me-2"></i>Previous Day</a>
+      {% else %}
+        <span></span>
+      {% endif %}
+
+      {% assign last_day_index = day_hubs.size | minus: 1 %}
+      {% if current_index < last_day_index %}
+        {% assign next_index = current_index | plus: 1 %}
+        <a class="btn btn-brand" href="{{ day_hubs[next_index].url | relative_url }}">Next Day<i class="lni lni-arrow-right ms-2"></i></a>
+      {% endif %}
+    </div>
+  </div>
+</section>

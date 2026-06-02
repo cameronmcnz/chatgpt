@@ -1,0 +1,19 @@
+User-agent: *
+Disallow: /
+
+# Non-standard directives below are honored by some crawlers.
+Noindex: /
+Nofollow: /
+Noarchive: /
+
+User-agent: Googlebot
+Disallow: /
+
+User-agent: Bingbot
+Disallow: /
+
+User-agent: Slurp
+Disallow: /
+
+User-agent: DuckDuckBot
+Disallow: /

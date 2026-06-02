@@ -1,0 +1,28 @@
+title: 7 Day Condensed ChatGPT Masterclass
+description: Beginner-friendly course site for learning ChatGPT, prompt engineering, and AI workflows.
+baseurl: "/micro-learning"
+url: "https://xennial-innovations.github.io"
+timezone: America/New_York
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+future: true
+
+sass:
+  sass_dir: assets/css
+  style: compressed
+
+exclude:
+  - create_acronym_content.py
+  - create_term_content.py
+  - front_matters.py
+  - folders.py
+  - files-and-folders.txt
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: post
+      noindex: true

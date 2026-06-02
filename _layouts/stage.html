@@ -1,0 +1,61 @@
+---
+layout: default
+---
+
+{% assign stage_folder = page.url | split: '/' | slice: 2, 1 | first %}
+{% assign stage_root = 'prompt-engineering/' | append: stage_folder | append: '/' %}
+{% assign stage_pages = site.pages | where_exp: "p", "p.path contains stage_root" | sort: "path" %}
+
+<section class="hero-wrap hero-small py-5">
+  <div class="container py-4">
+    <span class="badge badge-brand rounded-pill mb-3">{{ page.stage_label | default: stage_folder | replace: '-', ' ' }}</span>
+    <h1 class="display-5 fw-bold mb-3">{{ page.title }}</h1>
+    <p class="lead text-white-75 mb-0">{{ page.description | default: page.excerpt }}</p>
+  </div>
+</section>
+
+<section class="py-5 section-space">
+  <div class="container">
+    <div class="card card-soft reveal-up mb-4">
+      <div class="card-body p-4">
+        <h2 class="h5">Stage focus</h2>
+        <p class="mb-0">{{ page.stage_focus }}</p>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <h2 class="h4 mb-3"><i class="lni lni-book me-2"></i>Terms in this stage</h2>
+        <div class="row g-3">
+          {% for item in stage_pages %}
+            {% unless item.path contains '/acronyms/' or item.path contains '/index.md' %}
+              <div class="col-12 reveal-up">
+                {% include term-card.html item=item %}
+              </div>
+            {% endunless %}
+          {% endfor %}
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <h2 class="h4 mb-3"><i class="lni lni-bolt me-2"></i>Prompt Templates in this stage</h2>
+        <div class="row g-3">
+          {% for item in stage_pages %}
+            {% if item.path contains '/acronyms/' %}
+              <div class="col-12 reveal-up">
+                {% include acronym-card.html item=item %}
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pb-5">
+  <div class="container d-flex flex-wrap gap-2">
+    <a class="btn btn-outline-brand" href="{{ '/prompt-engineering/' | relative_url }}"><i class="lni lni-arrow-left me-2"></i>Back to Prompt Engineering</a>
+    <a class="btn btn-brand" href="{{ '/prompt-engineering/terms/' | relative_url }}">All Terms</a>
+    <a class="btn btn-outline-secondary" href="{{ '/prompt-engineering/acronyms/' | relative_url }}">All Prompt Templates</a>
+  </div>
+</section>

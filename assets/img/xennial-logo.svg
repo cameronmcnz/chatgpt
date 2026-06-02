@@ -1,0 +1,22 @@
+<svg width="1060" height="160" viewBox="0 0 1060 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="xennialGradA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0A1630"/>
+      <stop offset="56%" stop-color="#2F41B9"/>
+      <stop offset="100%" stop-color="#6B43E3"/>
+    </linearGradient>
+    <linearGradient id="xennialGradB" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#102348"/>
+      <stop offset="100%" stop-color="#1DD1FF"/>
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(0,8)">
+    <path d="M8 72 L48 12 L80 12 L40 72 L80 132 L48 132 Z" fill="url(#xennialGradA)"/>
+    <path d="M84 72 L124 12 L156 12 L116 72 L156 132 L124 132 Z" fill="url(#xennialGradB)"/>
+    <path d="M164 72 L124 12 L156 12 L196 72 L156 132 L124 132 Z" fill="url(#xennialGradA)"/>
+    <path d="M240 72 L200 12 L232 12 L272 72 L232 132 L200 132 Z" fill="url(#xennialGradA)"/>
+  </g>
+
+  <text x="300" y="106" fill="#06122A" font-family="Manrope, Segoe UI, sans-serif" font-size="82" font-weight="800" letter-spacing="2">XENNIAL INNOVATIONS</text>
+</svg>

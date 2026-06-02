@@ -1,0 +1,121 @@
+---
+layout: default
+---
+
+<section class="hero-wrap py-5 py-lg-6">
+  <div class="container py-4">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-7">
+        <span class="badge text-bg-light-subtle border border-info-subtle rounded-pill px-3 py-2 mb-3">Xennial Innovations Learning Series</span>
+        <h1 class="display-4 fw-bold lh-tight mb-3">7 Day Condensed ChatGPT Masterclass</h1>
+        <p class="lead text-white-75 mb-4">A practical, beginner-friendly course that helps you write better prompts, think clearly, and build AI workflows you can actually use.</p>
+        <div class="d-flex flex-wrap gap-2">
+          <a class="btn btn-brand btn-lg" href="{{ '/day-01/' | relative_url }}"><i class="lni lni-rocket me-2"></i>Start Day 1</a>
+          <a class="btn btn-outline-light btn-lg" href="{{ '/prompt-engineering/' | relative_url }}"><i class="lni lni-network me-2"></i>Explore Prompt Engineering</a>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="glass-panel p-4 p-lg-5">
+          <h2 class="h4 mb-3">Why this course matters</h2>
+          <p class="mb-3">Good prompting is becoming a core communication skill. It saves time, reduces confusion, and makes AI responses much more useful.</p>
+          <ul class="list-unstyled mb-0 d-grid gap-2">
+            <li><i class="lni lni-checkmark-circle text-cyan me-2"></i>Clear frameworks for better prompts</li>
+            <li><i class="lni lni-checkmark-circle text-cyan me-2"></i>Mini projects for practical confidence</li>
+            <li><i class="lni lni-checkmark-circle text-cyan me-2"></i>Terms and prompt templates you will actually remember</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5 section-space">
+  <div class="container">
+    <div class="row g-4 text-center">
+      <div class="col-6 col-lg-3 reveal-up">
+        <div class="metric-card">
+          <div class="metric-value" data-counter="7">7</div>
+          <p class="mb-0">Focused learning days</p>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3 reveal-up">
+        <div class="metric-card">
+          <div class="metric-value" data-counter="80">80+</div>
+          <p class="mb-0">Course lessons</p>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3 reveal-up">
+        <div class="metric-card">
+          <div class="metric-value" data-counter="40">40+</div>
+          <p class="mb-0">Prompt templates and terms</p>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3 reveal-up">
+        <div class="metric-card">
+          <div class="metric-value">100%</div>
+          <p class="mb-0">Beginner-friendly path</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="roadmap" class="py-5 section-space bg-soft">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-end flex-wrap gap-2 mb-4">
+      <div>
+        <h2 class="display-6 fw-bold mb-1">Your 7-Day Roadmap</h2>
+        <p class="text-muted mb-0">One focused theme per day, with lessons and a mini project to lock it in.</p>
+      </div>
+    </div>
+    <div class="row g-4">
+      {% assign day_hubs = site.pages | where_exp: "p", "p.path contains 'day-0'" | where_exp: "p", "p.path contains '/index.md'" | sort: "path" %}
+      {% for day in day_hubs %}
+        <div class="col-md-6 col-xl-4 reveal-up">
+          {% include day-card.html day=day %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="py-5 section-space">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-3 reveal-up">
+        <div class="feature-box h-100">
+          <i class="lni lni-book text-cyan feature-icon"></i>
+          <h3 class="h5">Prompt Terms</h3>
+          <p class="text-muted">Understand the vocabulary behind better prompts and stronger outputs.</p>
+          <a href="{{ '/prompt-engineering/terms/' | relative_url }}" class="stretched-link">Browse terms</a>
+        </div>
+      </div>
+      <div class="col-lg-3 reveal-up">
+        <div class="feature-box h-100">
+          <i class="lni lni-bolt feature-icon"></i>
+          <h3 class="h5">Template Playbook</h3>
+          <p class="text-muted">Use memorable prompt frameworks like CATS, MEOW, and VERIFY.</p>
+          <a href="{{ '/prompt-engineering/acronyms/' | relative_url }}" class="stretched-link">See templates</a>
+        </div>
+      </div>
+      <div class="col-lg-3 reveal-up">
+        <div class="feature-box h-100">
+          <i class="lni lni-agenda feature-icon"></i>
+          <h3 class="h5">Course Projects</h3>
+          <p class="text-muted">Build practical outputs you can use for work, study, and daily planning.</p>
+          <a href="{{ '/day-05/' | relative_url }}" class="stretched-link">Go to project day</a>
+        </div>
+      </div>
+      <div class="col-lg-3 reveal-up">
+        <div class="feature-box h-100">
+          <i class="lni lni-graduation feature-icon"></i>
+          <h3 class="h5">Beginner Path</h3>
+          <p class="text-muted">Clear sequence, short lessons, and zero buzzword overload.</p>
+          <a href="{{ '/day-01/' | relative_url }}" class="stretched-link">Start learning</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ content }}

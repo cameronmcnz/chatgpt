@@ -1,0 +1,12 @@
+<div class="card card-soft h-100">
+  <div class="card-body d-flex flex-column p-4">
+    <h3 class="h6 mb-2">{{ include.item.title }}</h3>
+    <p class="text-muted small mb-3">{{ include.item.description | default: include.item.excerpt | default: include.item.content | strip_html | truncate: 120 }}</p>
+    <div class="mb-2">
+      {% for cat in include.item.categories limit: 2 %}
+        <span class="badge rounded-pill badge-soft">{{ cat }}</span>
+      {% endfor %}
+    </div>
+    <a class="mt-auto" href="{{ include.item.url | relative_url }}">Read lesson <i class="lni lni-arrow-right"></i></a>
+  </div>
+</div>

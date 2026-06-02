@@ -1,0 +1,8 @@
+<div class="card acronym-card h-100">
+  <div class="card-body p-3 d-flex flex-column">
+    <span class="small text-uppercase text-info">Template</span>
+    <h3 class="h6 mb-2">{{ include.item.title }}</h3>
+    <p class="text-muted small mb-3">{{ include.item.excerpt | default: include.item.description | default: include.item.content | strip_html | truncate: 110 }}</p>
+    <a class="mt-auto" href="{{ include.item.url | relative_url }}">Open template <i class="lni lni-arrow-right"></i></a>
+  </div>
+</div>

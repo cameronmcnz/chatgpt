@@ -1,0 +1,2531 @@
+{
+  "schemaVersion": "1.0",
+  "title": "Prompt Engineering Terms and Acronym Learning Map",
+  "purpose": "Structured JSON for creating individual lessons on prompt ingredients and the acronyms built from them.",
+  "sourceSummary": "Based on the staged prompt-ingredient progression supplied by the user.",
+  "stageCount": 7,
+  "termCount": 34,
+  "acronymCount": 27,
+  "stages": [
+    {
+      "stageId": 1,
+      "stageTitle": "Beginner Foundations",
+      "learningLevel": "Beginner",
+      "description": "This is the make your prompt clear stage.",
+      "whyThisStage": "Students first learn how to ask clearly by defining the task, goal, context, audience, tone, format, and result.",
+      "terms": [
+        {
+          "term": "Task",
+          "meaning": "The specific thing you want ChatGPT to do",
+          "synonyms": [
+            "Ask",
+            "Job",
+            "Action",
+            "Assignment"
+          ]
+        },
+        {
+          "term": "Goal",
+          "meaning": "What you want to accomplish",
+          "synonyms": [
+            "Objective",
+            "Aim",
+            "Purpose",
+            "Intent",
+            "Mission",
+            "End goal",
+            "User goal"
+          ]
+        },
+        {
+          "term": "Context",
+          "meaning": "The background ChatGPT needs before answering",
+          "synonyms": [
+            "Background",
+            "Situation",
+            "Setting",
+            "Grounding",
+            "User context",
+            "Knowledge",
+            "Facts"
+          ]
+        },
+        {
+          "term": "Audience",
+          "meaning": "Who the answer is for",
+          "synonyms": [
+            "User",
+            "Learner",
+            "Reader",
+            "Viewer",
+            "Customer",
+            "Audience-aware"
+          ]
+        },
+        {
+          "term": "Tone",
+          "meaning": "How the answer should sound",
+          "synonyms": [
+            "Style",
+            "Voice",
+            "Mood"
+          ]
+        },
+        {
+          "term": "Format",
+          "meaning": "How the answer should be arranged",
+          "synonyms": [
+            "Structure",
+            "Output",
+            "End format",
+            "Expected format",
+            "Target format"
+          ]
+        },
+        {
+          "term": "Result",
+          "meaning": "The finished thing you want back",
+          "synonyms": [
+            "Deliverable",
+            "End product",
+            "Target output",
+            "Expected output",
+            "Key output",
+            "Answer"
+          ]
+        }
+      ],
+      "acronyms": [
+        "CATS",
+        "CRAP",
+        "FAST"
+      ],
+      "acronymDetails": [
+        {
+          "acronym": "CATS",
+          "stageId": 1,
+          "stageTitle": "Beginner Foundations",
+          "learningLevel": "Beginner",
+          "expansion": [
+            {
+              "word": "Context",
+              "normalizedTerm": "Context"
+            },
+            {
+              "word": "Audience",
+              "normalizedTerm": "Audience"
+            },
+            {
+              "word": "Tone",
+              "normalizedTerm": "Tone"
+            },
+            {
+              "word": "Structure",
+              "normalizedTerm": "Format"
+            }
+          ],
+          "teachingUse": "Use this acronym as a lesson-ready prompt template for the stage shown. Each expansion word can become a prompt field or mini-lesson."
+        },
+        {
+          "acronym": "CRAP",
+          "stageId": 1,
+          "stageTitle": "Beginner Foundations",
+          "learningLevel": "Beginner",
+          "expansion": [
+            {
+              "word": "Context",
+              "normalizedTerm": "Context"
+            },
+            {
+              "word": "Restrictions",
+              "normalizedTerm": "Limits"
+            },
+            {
+              "word": "Aim",
+              "normalizedTerm": "Goal"
+            },
+            {
+              "word": "Persona",
+              "normalizedTerm": "Role"
+            }
+          ],
+          "teachingUse": "Use this acronym as a lesson-ready prompt template for the stage shown. Each expansion word can become a prompt field or mini-lesson."
+        },
+        {
+          "acronym": "FAST",
+          "stageId": 1,
+          "stageTitle": "Beginner Foundations",
+          "learningLevel": "Beginner",
+          "expansion": [
+            {
+              "word": "Format",
+              "normalizedTerm": "Format"
+            },
+            {
+              "word": "Audience",
+              "normalizedTerm": "Audience"
+            },
+            {
+              "word": "Style",
+              "normalizedTerm": "Tone"
+            },
+            {
+              "word": "Task",
+              "normalizedTerm": "Task"
+            }
+          ],
+          "teachingUse": "Use this acronym as a lesson-ready prompt template for the stage shown. Each expansion word can become a prompt field or mini-lesson."
+        }
+      ]
+    },
+    {
+      "stageId": 2,
+      "stageTitle": "Controlled Prompting",
+      "learningLevel": "Early Intermediate",
+      "description": "Once students can ask clearly, they learn how to control the answer.",
+      "whyThisStage": "These ingredients make prompts more reliable, creative, and reusable. Students learn that ChatGPT performs better when it has boundaries, examples, and a clear role.",
+      "terms": [
+        {
+          "term": "Role",
+          "meaning": "The identity or perspective ChatGPT should use",
+          "synonyms": [
+            "Persona",
+            "Behavior",
+            "Identity",
+            "Lens",
+            "Perspective"
+          ]
+        },
+        {
+          "term": "Limits",
+          "meaning": "The boundaries ChatGPT must stay within",
+          "synonyms": [
+            "Constraints",
+            "Rules",
+            "Restrictions",
+            "Restraints",
+            "Hard limits",
+            "Parameters"
+          ]
+        },
+        {
+          "term": "Guardrails",
+          "meaning": "What ChatGPT should avoid or be careful about",
+          "synonyms": [
+            "Warnings",
+            "No-go rules",
+            "Hallucination warning",
+            "Red flags"
+          ]
+        },
+        {
+          "term": "Examples",
+          "meaning": "Samples that show what good looks like",
+          "synonyms": [
+            "Samples",
+            "References",
+            "Model answer",
+            "Style example"
+          ]
+        },
+        {
+          "term": "Detail",
+          "meaning": "Adding depth or specifics",
+          "synonyms": [
+            "Details",
+            "Add detail",
+            "Deepen",
+            "Demonstrate"
+          ]
+        },
+        {
+          "term": "Hook",
+          "meaning": "The opening that grabs attention",
+          "synonyms": [
+            "Opening",
+            "Headline",
+            "Attention grabber"
+          ]
+        }
+      ],
+      "acronyms": [
+        "MEOW",
+        "PAWS",
+        "TREAT",
+        "POWER"
+      ],
+      "acronymDetails": [
+        {
+          "acronym": "MEOW",
+          "stageId": 2,
+          "stageTitle": "Controlled Prompting",
+          "learningLevel": "Early Intermediate",
+          "expansion": [
+            {
+              "word": "Mission",
+              "normalizedTerm": "Goal"
+            },
+            {
+              "word": "Examples",
+              "normalizedTerm": "Examples"
+            },
+            {
+              "word": "Output",
+              "normalizedTerm": "Result"
+            },
+            {
+              "word": "Warnings",
+              "normalizedTerm": "Guardrails"
+            }
+          ],
+          "teachingUse": "Use this acronym as a lesson-ready prompt template for the stage shown. Each expansion word can become a prompt field or mini-lesson."
+        },
+        {
+          "acronym": "PAWS",
+          "stageId": 2,
+          "stageTitle": "Controlled Prompting",
+          "learningLevel": "Early Intermediate",
+          "expansion": [
+            {
+              "word": "Persona",
+              "normalizedTerm": "Role"
+            },
+            {
+              "word": "Ask",
+              "normalizedTerm": "Task"
+            },
+            {
+              "word": "Warnings",
+              "normalizedTerm": "Guardrails"
+            },
+            {
+              "word": "Structure",
+              "normalizedTerm": "Format"
+            }
+          ],
+          "teachingUse": "Use this acronym as a lesson-ready prompt template for the stage shown. Each expansion word can become a prompt field or mini-lesson."
+        },
+        {
+          "acronym": "TREAT",
+          "stageId": 2,
+          "stageTitle": "Controlled Prompting",
+          "learningLevel": "Early Intermediate",
+          "expansion": [
+            {
+              "word": "Task",
+              "normalizedTerm": "Task"
+            },
+            {
+              "word": "Role",
+              "normalizedTerm": "Role"
+            },
+            {
+              "word": "Examples",
+              "normalizedTerm": "Examples"
+            },
+            {
+              "word": "Audience",
+              "normalizedTerm": "Audience"
+            },
+            {
+              "word": "Tone",
+              "normalizedTerm": "Tone"
+            }
+          ],
+          "teachingUse": "Use this acronym as a lesson-ready prompt template for the stage shown. Each expansion word can become a prompt field or mini-lesson."
+        },
+        {
+          "acronym": "POWER",
+          "stageId": 2,
+          "stageTitle": "Controlled Prompting",
+          "learningLevel": "Early Intermediate",
+          "expansion": [
+            {
+              "word": "Persona",
+              "normalizedTerm": "Role"
+            },
+            {
+              "word": "Objective",
+              "normalizedTerm": "Goal"
+            },
+            {
+              "word": "Warnings",
+              "normalizedTerm": "Guardrails"
+            },
+            {
+              "word": "Examples",
+              "normalizedTerm": "Examples"
+            },
+            {
+              "word": "Result",
+              "normalizedTerm": "Result"
+            }
+          ],
+          "teachingUse": "Use this acronym as a lesson-ready prompt template for the stage shown. Each expansion word can become a prompt field or mini-lesson."
+        }
+      ]
+    },
+    {
+      "stageId": 3,
+      "stageTitle": "Working With Material",
+      "learningLevel": "Intermediate",
+      "description": "This is where students move from asking ChatGPT anything to using specific content.",
+      "whyThisStage": "Students are now ready to upload documents, paste transcripts, summarize notes, transform messy content, and ask ChatGPT to follow a process.",
+      "terms": [
+        {
+          "term": "Input Material",
+          "meaning": "The content ChatGPT should use",
+          "synonyms": [
+            "Material",
+            "Input",
+            "Source",
+            "Document",
+            "Transcript",
+            "Notes"
+          ]
+        },
+        {
+          "term": "Summarization",
+          "meaning": "Making something shorter and clearer",
+          "synonyms": [
+            "Summarize",
+            "Compress",
+            "Narrow",
+            "Main idea"
+          ]
+        },
+        {
+          "term": "Organization",
+          "meaning": "Structuring messy information",
+          "synonyms": [
+            "Sort",
+            "Separate",
+            "Organize",
+            "Map",
+            "Parts",
+            "Structure"
+          ]
+        },
+        {
+          "term": "Chunking",
+          "meaning": "Breaking large content into smaller pieces",
+          "synonyms": [
+            "Cut",
+            "Headline",
+            "Name",
+            "Keep order"
+          ]
+        },
+        {
+          "term": "Method",
+          "meaning": "The process ChatGPT should follow",
+          "synonyms": [
+            "Approach",
+            "Workflow",
+            "Process",
+            "Steps"
+          ]
+        }
+      ],
+      "acronyms": [
+        "SNAP",
+        "SORT",
+        "CHUNK",
+        "CLAW"
+      ],
+      "acronymDetails": [
+        {
+          "acronym": "SNAP",
+          "stageId": 3,
+          "stageTitle": "Working With Material",
+          "learningLevel": "Intermediate",
+          "expansion": [
+            {
+              "word": "Summarize",
+              "normalizedTerm": "Summarization"
+            },
+            {
+              "word": "Narrow",
+              "normalizedTerm": "Summarization"
+            },
+            {
+              "word": "Apply",
+              "normalizedTerm": "Method"
+            },
+            {
+              "word": "Polish",
+              "normalizedTerm": "Refinement"
+            }
+          ],
+          "teachingUse": "Use this acronym as a lesson-ready prompt template for the stage shown. Each expansion word can become a prompt field or mini-lesson."
+        },
+        {
+          "acronym": "SORT",
+          "stageId": 3,
+          "stageTitle": "Working With Material",
+          "learningLevel": "Intermediate",
+          "expansion": [
+            {
+              "word": "Separate",
+              "normalizedTerm": "Organization"
+            },
+            {
+              "word": "Organize",
+              "normalizedTerm": "Organization"
+            },
+            {
+              "word": "Rank",
+              "normalizedTerm": "Comparison"
+            },
+            {
+              "word": "Transform",
+              "normalizedTerm": "Method"
+            }
+          ],
+          "teachingUse": "Use this acronym as a lesson-ready prompt template for the stage shown. Each expansion word can become a prompt field or mini-lesson."
+        },
+        {
+          "acronym": "CHUNK",
+          "stageId": 3,
+          "stageTitle": "Working With Material",
+          "learningLevel": "Intermediate",
+          "expansion": [
+            {
+              "word": "Cut",
+              "normalizedTerm": "Chunking"
+            },
+            {
+              "word": "Headline",
+              "normalizedTerm": "Chunking"
+            },
+            {
+              "word": "Understand",
+              "normalizedTerm": "Evaluation"
+            },
+            {
+              "word": "Name",
+              "normalizedTerm": "Chunking"
+            },
+            {
+              "word": "Keep order",
+              "normalizedTerm": "Chunking"
+            }
+          ],
+          "teachingUse": "Use this acronym as a lesson-ready prompt template for the stage shown. Each expansion word can become a prompt field or mini-lesson."
+        },
+        {
+          "acronym": "CLAW",
+          "stageId": 3,
+          "stageTitle": "Working With Material",
+          "learningLevel": "Intermediate",
+          "expansion": [
+            {
+              "word": "Context",
+              "normalizedTerm": "Context"
+            },
+            {
+              "word": "Limits",
+              "normalizedTerm": "Limits"
+            },
+            {
+              "word": "Audience",
+              "normalizedTerm": "Audience"
+            },
+            {
+              "word": "Workflow",
+              "normalizedTerm": "Method"
+            }
+          ],
+          "teachingUse": "Use this acronym as a lesson-ready prompt template for the stage shown. Each expansion word can become a prompt field or mini-lesson."
+        }
+      ]
+    },
+    {
+      "stageId": 4,
+      "stageTitle": "Learning, Teaching, and Practice",
+      "learningLevel": "Upper Intermediate",
+      "description": "This is where prompting becomes interactive.",
+      "whyThisStage": "Students can design prompts that teach, quiz, coach, simulate interviews, create roleplays, and respond to a learner’s needs.",
+      "terms": [
+        {
+          "term": "Teaching Level",
+          "meaning": "Adjusting explanation depth",
+          "synonyms": [
+            "Simple",
+            "Clear",
+            "Advanced",
+            "Layered",
+            "Expert",
+            "Level 1"
+          ]
+        },
+        {
+          "term": "Practice",
+          "meaning": "Testing or rehearsing with the user",
+          "synonyms": [
+            "Quiz",
+            "Test the user",
+            "Question",
+            "Active recall"
+          ]
+        },
+        {
+          "term": "Scenario",
+          "meaning": "Creating a simulated situation",
+          "synonyms": [
+            "Simulation",
+            "Roleplay",
+            "Create scenario"
+          ]
+        },
+        {
+          "term": "User Need",
+          "meaning": "The problem the user is trying to solve",
+          "synonyms": [
+            "Needs",
+            "Problem",
+            "Pain point"
+          ]
+        }
+      ],
+      "acronyms": [
+        "TUTOR",
+        "QUIZ",
+        "SIM",
+        "ACT"
+      ],
+      "acronymDetails": [
+        {
+          "acronym": "TUTOR",
+          "stageId": 4,
+          "stageTitle": "Learning, Teaching, and Practice",
+          "learningLevel": "Upper Intermediate",
+          "expansion": [
+            {
+              "word": "Teach",
+              "normalizedTerm": "Teaching Level"
+            },
+            {
+              "word": "Use examples",
+              "normalizedTerm": "Examples"
+            },
+            {
+              "word": "Test",
+              "normalizedTerm": "Practice"
+            },
+            {
+              "word": "Observe mistakes",
+              "normalizedTerm": "Evaluation"
+            },
+            {
+              "word": "Remediate",
+              "normalizedTerm": "Feedback"
+            }
+          ],
+          "teachingUse": "Use this acronym as a lesson-ready prompt template for the stage shown. Each expansion word can become a prompt field or mini-lesson."
+        },
+        {
+          "acronym": "QUIZ",
+          "stageId": 4,
+          "stageTitle": "Learning, Teaching, and Practice",
+          "learningLevel": "Upper Intermediate",
+          "expansion": [
+            {
+              "word": "Question",
+              "normalizedTerm": "Practice"
+            },
+            {
+              "word": "Understand answer",
+              "normalizedTerm": "Evaluation"
+            },
+            {
+              "word": "Identify gaps",
+              "normalizedTerm": "Evaluation"
+            },
+            {
+              "word": "Zoom deeper",
+              "normalizedTerm": "Detail"
+            }
+          ],
+          "teachingUse": "Use this acronym as a lesson-ready prompt template for the stage shown. Each expansion word can become a prompt field or mini-lesson."
+        },
+        {
+          "acronym": "SIM",
+          "stageId": 4,
+          "stageTitle": "Learning, Teaching, and Practice",
+          "learningLevel": "Upper Intermediate",
+          "expansion": [
+            {
+              "word": "Scenario",
+              "normalizedTerm": "Scenario"
+            },
+            {
+              "word": "Identity",
+              "normalizedTerm": "Role"
+            },
+            {
+              "word": "Mission",
+              "normalizedTerm": "Goal"
+            }
+          ],
+          "teachingUse": "Use this acronym as a lesson-ready prompt template for the stage shown. Each expansion word can become a prompt field or mini-lesson."
+        },
+        {
+          "acronym": "ACT",
+          "stageId": 4,
+          "stageTitle": "Learning, Teaching, and Practice",
+          "learningLevel": "Upper Intermediate",
+          "expansion": [
+            {
+              "word": "Assume role",
+              "normalizedTerm": "Role"
+            },
+            {
+              "word": "Create scenario",
+              "normalizedTerm": "Scenario"
+            },
+            {
+              "word": "Test the user",
+              "normalizedTerm": "Practice"
+            }
+          ],
+          "teachingUse": "Use this acronym as a lesson-ready prompt template for the stage shown. Each expansion word can become a prompt field or mini-lesson."
+        }
+      ]
+    },
+    {
+      "stageId": 5,
+      "stageTitle": "Improvement Loops",
+      "learningLevel": "Advanced Intermediate",
+      "description": "This is where students learn that good prompting is iterative.",
+      "whyThisStage": "Students should stop expecting the first answer to be perfect. This stage teaches them to review, score, improve, and reprompt.",
+      "terms": [
+        {
+          "term": "Evaluation",
+          "meaning": "Judging the quality of an answer",
+          "synonyms": [
+            "Review",
+            "Assess",
+            "Rate",
+            "Score",
+            "Test",
+            "Check understanding"
+          ]
+        },
+        {
+          "term": "Feedback",
+          "meaning": "Suggestions for improvement",
+          "synonyms": [
+            "Improve",
+            "Suggest",
+            "Offer improvements",
+            "Remediate"
+          ]
+        },
+        {
+          "term": "Refinement",
+          "meaning": "Making the answer better",
+          "synonyms": [
+            "Refine",
+            "Optimize",
+            "Tune",
+            "Polish",
+            "Fix",
+            "Upgrade"
+          ]
+        },
+        {
+          "term": "Iteration",
+          "meaning": "Improving through follow-up prompts",
+          "synonyms": [
+            "Loop",
+            "Prompt again",
+            "Continue",
+            "Build on the answer"
+          ]
+        }
+      ],
+      "acronyms": [
+        "DRIFT",
+        "LOOP",
+        "ROAST",
+        "REFINE"
+      ],
+      "acronymDetails": [
+        {
+          "acronym": "DRIFT",
+          "stageId": 5,
+          "stageTitle": "Improvement Loops",
+          "learningLevel": "Advanced Intermediate",
+          "expansion": [
+            {
+              "word": "Define",
+              "normalizedTerm": "Task"
+            },
+            {
+              "word": "Refine",
+              "normalizedTerm": "Refinement"
+            },
+            {
+              "word": "Iterate",
+              "normalizedTerm": "Iteration"
+            },
+            {
+              "word": "Feedback",
+              "normalizedTerm": "Feedback"
+            },
+            {
+              "word": "Tune",
+              "normalizedTerm": "Refinement"
+            }
+          ],
+          "teachingUse": "Use this acronym as a lesson-ready prompt template for the stage shown. Each expansion word can become a prompt field or mini-lesson."
+        },
+        {
+          "acronym": "LOOP",
+          "stageId": 5,
+          "stageTitle": "Improvement Loops",
+          "learningLevel": "Advanced Intermediate",
+          "expansion": [
+            {
+              "word": "Look",
+              "normalizedTerm": "Evaluation"
+            },
+            {
+              "word": "Observe",
+              "normalizedTerm": "Evaluation"
+            },
+            {
+              "word": "Optimize",
+              "normalizedTerm": "Refinement"
+            },
+            {
+              "word": "Prompt again",
+              "normalizedTerm": "Iteration"
+            }
+          ],
+          "teachingUse": "Use this acronym as a lesson-ready prompt template for the stage shown. Each expansion word can become a prompt field or mini-lesson."
+        },
+        {
+          "acronym": "ROAST",
+          "stageId": 5,
+          "stageTitle": "Improvement Loops",
+          "learningLevel": "Advanced Intermediate",
+          "expansion": [
+            {
+              "word": "Review",
+              "normalizedTerm": "Evaluation"
+            },
+            {
+              "word": "Observe",
+              "normalizedTerm": "Evaluation"
+            },
+            {
+              "word": "Assess",
+              "normalizedTerm": "Evaluation"
+            },
+            {
+              "word": "Suggest",
+              "normalizedTerm": "Feedback"
+            },
+            {
+              "word": "Transform",
+              "normalizedTerm": "Method"
+            }
+          ],
+          "teachingUse": "Use this acronym as a lesson-ready prompt template for the stage shown. Each expansion word can become a prompt field or mini-lesson."
+        },
+        {
+          "acronym": "REFINE",
+          "stageId": 5,
+          "stageTitle": "Improvement Loops",
+          "learningLevel": "Advanced Intermediate",
+          "expansion": [
+            {
+              "word": "Review",
+              "normalizedTerm": "Evaluation"
+            },
+            {
+              "word": "Evaluate",
+              "normalizedTerm": "Evaluation"
+            },
+            {
+              "word": "Fix",
+              "normalizedTerm": "Refinement"
+            },
+            {
+              "word": "Improve",
+              "normalizedTerm": "Feedback"
+            },
+            {
+              "word": "Narrow",
+              "normalizedTerm": "Summarization"
+            },
+            {
+              "word": "Explain",
+              "normalizedTerm": "Teaching Level"
+            }
+          ],
+          "teachingUse": "Use this acronym as a lesson-ready prompt template for the stage shown. Each expansion word can become a prompt field or mini-lesson."
+        }
+      ]
+    },
+    {
+      "stageId": 6,
+      "stageTitle": "Analysis and Decision-Making",
+      "learningLevel": "Advanced",
+      "description": "This is where ChatGPT becomes a thinking partner.",
+      "whyThisStage": "Students can ask ChatGPT to compare options, expose assumptions, view a problem from multiple angles, and make recommendations.",
+      "terms": [
+        {
+          "term": "Comparison",
+          "meaning": "Choosing between options",
+          "synonyms": [
+            "Compare",
+            "Rank",
+            "Prioritize",
+            "Keep the best",
+            "Pick"
+          ]
+        },
+        {
+          "term": "Trade-offs",
+          "meaning": "Upsides, downsides, and consequences",
+          "synonyms": [
+            "Pros and cons",
+            "Risks",
+            "Weaknesses",
+            "Objections"
+          ]
+        },
+        {
+          "term": "Decision",
+          "meaning": "Making a final recommendation",
+          "synonyms": [
+            "Recommendation",
+            "Winner",
+            "Final choice"
+          ]
+        },
+        {
+          "term": "Assumptions",
+          "meaning": "Things ChatGPT may be assuming",
+          "synonyms": [
+            "Hidden assumptions",
+            "Identify assumptions",
+            "Reflect assumptions"
+          ]
+        },
+        {
+          "term": "Perspective Shift",
+          "meaning": "Looking at something from a different viewpoint",
+          "synonyms": [
+            "Lens",
+            "Look through",
+            "Explain perspective",
+            "Angle",
+            "Note bias"
+          ]
+        }
+      ],
+      "acronyms": [
+        "RANK",
+        "PICK",
+        "TILT",
+        "LENS"
+      ],
+      "acronymDetails": [
+        {
+          "acronym": "RANK",
+          "stageId": 6,
+          "stageTitle": "Analysis and Decision-Making",
+          "learningLevel": "Advanced",
+          "expansion": [
+            {
+              "word": "Rate",
+              "normalizedTerm": "Evaluation"
+            },
+            {
+              "word": "Analyze",
+              "normalizedTerm": "Comparison"
+            },
+            {
+              "word": "Note trade-offs",
+              "normalizedTerm": "Trade-offs"
+            },
+            {
+              "word": "Keep the best",
+              "normalizedTerm": "Comparison"
+            }
+          ],
+          "teachingUse": "Use this acronym as a lesson-ready prompt template for the stage shown. Each expansion word can become a prompt field or mini-lesson."
+        },
+        {
+          "acronym": "PICK",
+          "stageId": 6,
+          "stageTitle": "Analysis and Decision-Making",
+          "learningLevel": "Advanced",
+          "expansion": [
+            {
+              "word": "Prioritize",
+              "normalizedTerm": "Comparison"
+            },
+            {
+              "word": "Inspect",
+              "normalizedTerm": "Evaluation"
+            },
+            {
+              "word": "Compare",
+              "normalizedTerm": "Comparison"
+            },
+            {
+              "word": "Keep",
+              "normalizedTerm": "Comparison"
+            }
+          ],
+          "teachingUse": "Use this acronym as a lesson-ready prompt template for the stage shown. Each expansion word can become a prompt field or mini-lesson."
+        },
+        {
+          "acronym": "TILT",
+          "stageId": 6,
+          "stageTitle": "Analysis and Decision-Making",
+          "learningLevel": "Advanced",
+          "expansion": [
+            {
+              "word": "Take another angle",
+              "normalizedTerm": "Perspective Shift"
+            },
+            {
+              "word": "Inspect",
+              "normalizedTerm": "Evaluation"
+            },
+            {
+              "word": "List trade-offs",
+              "normalizedTerm": "Trade-offs"
+            },
+            {
+              "word": "Test assumptions",
+              "normalizedTerm": "Critical Thinking"
+            }
+          ],
+          "teachingUse": "Use this acronym as a lesson-ready prompt template for the stage shown. Each expansion word can become a prompt field or mini-lesson."
+        },
+        {
+          "acronym": "LENS",
+          "stageId": 6,
+          "stageTitle": "Analysis and Decision-Making",
+          "learningLevel": "Advanced",
+          "expansion": [
+            {
+              "word": "Look through",
+              "normalizedTerm": "Perspective Shift"
+            },
+            {
+              "word": "Explain perspective",
+              "normalizedTerm": "Perspective Shift"
+            },
+            {
+              "word": "Note bias",
+              "normalizedTerm": "Perspective Shift"
+            },
+            {
+              "word": "Suggest insight",
+              "normalizedTerm": "Feedback"
+            }
+          ],
+          "teachingUse": "Use this acronym as a lesson-ready prompt template for the stage shown. Each expansion word can become a prompt field or mini-lesson."
+        }
+      ]
+    },
+    {
+      "stageId": 7,
+      "stageTitle": "Research, Verification, and Critical Thinking",
+      "learningLevel": "Advanced",
+      "description": "This is the advanced quality-control layer.",
+      "whyThisStage": "These are advanced because they require students to understand that AI can sound confident while being wrong. They learn to demand evidence, challenge assumptions, and ask for confidence levels.",
+      "terms": [
+        {
+          "term": "Evidence",
+          "meaning": "Support for claims or conclusions",
+          "synonyms": [
+            "Sources",
+            "Proof",
+            "Support",
+            "Citations",
+            "Validation"
+          ]
+        },
+        {
+          "term": "Critical Thinking",
+          "meaning": "Challenging the answer or idea",
+          "synonyms": [
+            "Red-team",
+            "Challenge",
+            "Find the opposite",
+            "Attack weaknesses",
+            "Test assumptions"
+          ]
+        },
+        {
+          "term": "Confidence",
+          "meaning": "How certain the answer is",
+          "synonyms": [
+            "Your confidence",
+            "Certainty",
+            "Confidence score"
+          ]
+        }
+      ],
+      "acronyms": [
+        "CHECK",
+        "VERIFY",
+        "FLIP",
+        "DEBATE"
+      ],
+      "acronymDetails": [
+        {
+          "acronym": "CHECK",
+          "stageId": 7,
+          "stageTitle": "Research, Verification, and Critical Thinking",
+          "learningLevel": "Advanced",
+          "expansion": [
+            {
+              "word": "Context",
+              "normalizedTerm": "Context"
+            },
+            {
+              "word": "Hallucination warning",
+              "normalizedTerm": "Guardrails"
+            },
+            {
+              "word": "Evidence",
+              "normalizedTerm": "Evidence"
+            },
+            {
+              "word": "Constraints",
+              "normalizedTerm": "Limits"
+            },
+            {
+              "word": "Keep format",
+              "normalizedTerm": "Format"
+            }
+          ],
+          "teachingUse": "Use this acronym as a lesson-ready prompt template for the stage shown. Each expansion word can become a prompt field or mini-lesson."
+        },
+        {
+          "acronym": "VERIFY",
+          "stageId": 7,
+          "stageTitle": "Research, Verification, and Critical Thinking",
+          "learningLevel": "Advanced",
+          "expansion": [
+            {
+              "word": "Validate",
+              "normalizedTerm": "Evidence"
+            },
+            {
+              "word": "Evidence",
+              "normalizedTerm": "Evidence"
+            },
+            {
+              "word": "Red flags",
+              "normalizedTerm": "Guardrails"
+            },
+            {
+              "word": "Identify assumptions",
+              "normalizedTerm": "Assumptions"
+            },
+            {
+              "word": "Format",
+              "normalizedTerm": "Format"
+            },
+            {
+              "word": "Your confidence",
+              "normalizedTerm": "Confidence"
+            }
+          ],
+          "teachingUse": "Use this acronym as a lesson-ready prompt template for the stage shown. Each expansion word can become a prompt field or mini-lesson."
+        },
+        {
+          "acronym": "FLIP",
+          "stageId": 7,
+          "stageTitle": "Research, Verification, and Critical Thinking",
+          "learningLevel": "Advanced",
+          "expansion": [
+            {
+              "word": "Find the opposite",
+              "normalizedTerm": "Critical Thinking"
+            },
+            {
+              "word": "List objections",
+              "normalizedTerm": "Trade-offs"
+            },
+            {
+              "word": "Identify weaknesses",
+              "normalizedTerm": "Critical Thinking"
+            },
+            {
+              "word": "Propose alternatives",
+              "normalizedTerm": "Decision"
+            }
+          ],
+          "teachingUse": "Use this acronym as a lesson-ready prompt template for the stage shown. Each expansion word can become a prompt field or mini-lesson."
+        },
+        {
+          "acronym": "DEBATE",
+          "stageId": 7,
+          "stageTitle": "Research, Verification, and Critical Thinking",
+          "learningLevel": "Advanced",
+          "expansion": [
+            {
+              "word": "Define sides",
+              "normalizedTerm": "Critical Thinking"
+            },
+            {
+              "word": "Evidence",
+              "normalizedTerm": "Evidence"
+            },
+            {
+              "word": "Best arguments",
+              "normalizedTerm": "Evidence"
+            },
+            {
+              "word": "Attack weaknesses",
+              "normalizedTerm": "Critical Thinking"
+            },
+            {
+              "word": "Test conclusion",
+              "normalizedTerm": "Critical Thinking"
+            },
+            {
+              "word": "Explain winner",
+              "normalizedTerm": "Decision"
+            }
+          ],
+          "teachingUse": "Use this acronym as a lesson-ready prompt template for the stage shown. Each expansion word can become a prompt field or mini-lesson."
+        }
+      ]
+    }
+  ],
+  "termIndex": [
+    {
+      "term": "Task",
+      "stageId": 1,
+      "stageTitle": "Beginner Foundations",
+      "learningLevel": "Beginner",
+      "meaning": "The specific thing you want ChatGPT to do",
+      "synonyms": [
+        "Ask",
+        "Job",
+        "Action",
+        "Assignment"
+      ],
+      "lessonSeed": {
+        "lessonGoal": "Teach learners how to use Task as a prompt ingredient.",
+        "practicePrompt": "Create a prompt that clearly includes a Task field."
+      }
+    },
+    {
+      "term": "Goal",
+      "stageId": 1,
+      "stageTitle": "Beginner Foundations",
+      "learningLevel": "Beginner",
+      "meaning": "What you want to accomplish",
+      "synonyms": [
+        "Objective",
+        "Aim",
+        "Purpose",
+        "Intent",
+        "Mission",
+        "End goal",
+        "User goal"
+      ],
+      "lessonSeed": {
+        "lessonGoal": "Teach learners how to use Goal as a prompt ingredient.",
+        "practicePrompt": "Create a prompt that clearly includes a Goal field."
+      }
+    },
+    {
+      "term": "Context",
+      "stageId": 1,
+      "stageTitle": "Beginner Foundations",
+      "learningLevel": "Beginner",
+      "meaning": "The background ChatGPT needs before answering",
+      "synonyms": [
+        "Background",
+        "Situation",
+        "Setting",
+        "Grounding",
+        "User context",
+        "Knowledge",
+        "Facts"
+      ],
+      "lessonSeed": {
+        "lessonGoal": "Teach learners how to use Context as a prompt ingredient.",
+        "practicePrompt": "Create a prompt that clearly includes a Context field."
+      }
+    },
+    {
+      "term": "Audience",
+      "stageId": 1,
+      "stageTitle": "Beginner Foundations",
+      "learningLevel": "Beginner",
+      "meaning": "Who the answer is for",
+      "synonyms": [
+        "User",
+        "Learner",
+        "Reader",
+        "Viewer",
+        "Customer",
+        "Audience-aware"
+      ],
+      "lessonSeed": {
+        "lessonGoal": "Teach learners how to use Audience as a prompt ingredient.",
+        "practicePrompt": "Create a prompt that clearly includes a Audience field."
+      }
+    },
+    {
+      "term": "Tone",
+      "stageId": 1,
+      "stageTitle": "Beginner Foundations",
+      "learningLevel": "Beginner",
+      "meaning": "How the answer should sound",
+      "synonyms": [
+        "Style",
+        "Voice",
+        "Mood"
+      ],
+      "lessonSeed": {
+        "lessonGoal": "Teach learners how to use Tone as a prompt ingredient.",
+        "practicePrompt": "Create a prompt that clearly includes a Tone field."
+      }
+    },
+    {
+      "term": "Format",
+      "stageId": 1,
+      "stageTitle": "Beginner Foundations",
+      "learningLevel": "Beginner",
+      "meaning": "How the answer should be arranged",
+      "synonyms": [
+        "Structure",
+        "Output",
+        "End format",
+        "Expected format",
+        "Target format"
+      ],
+      "lessonSeed": {
+        "lessonGoal": "Teach learners how to use Format as a prompt ingredient.",
+        "practicePrompt": "Create a prompt that clearly includes a Format field."
+      }
+    },
+    {
+      "term": "Result",
+      "stageId": 1,
+      "stageTitle": "Beginner Foundations",
+      "learningLevel": "Beginner",
+      "meaning": "The finished thing you want back",
+      "synonyms": [
+        "Deliverable",
+        "End product",
+        "Target output",
+        "Expected output",
+        "Key output",
+        "Answer"
+      ],
+      "lessonSeed": {
+        "lessonGoal": "Teach learners how to use Result as a prompt ingredient.",
+        "practicePrompt": "Create a prompt that clearly includes a Result field."
+      }
+    },
+    {
+      "term": "Role",
+      "stageId": 2,
+      "stageTitle": "Controlled Prompting",
+      "learningLevel": "Early Intermediate",
+      "meaning": "The identity or perspective ChatGPT should use",
+      "synonyms": [
+        "Persona",
+        "Behavior",
+        "Identity",
+        "Lens",
+        "Perspective"
+      ],
+      "lessonSeed": {
+        "lessonGoal": "Teach learners how to use Role as a prompt ingredient.",
+        "practicePrompt": "Create a prompt that clearly includes a Role field."
+      }
+    },
+    {
+      "term": "Limits",
+      "stageId": 2,
+      "stageTitle": "Controlled Prompting",
+      "learningLevel": "Early Intermediate",
+      "meaning": "The boundaries ChatGPT must stay within",
+      "synonyms": [
+        "Constraints",
+        "Rules",
+        "Restrictions",
+        "Restraints",
+        "Hard limits",
+        "Parameters"
+      ],
+      "lessonSeed": {
+        "lessonGoal": "Teach learners how to use Limits as a prompt ingredient.",
+        "practicePrompt": "Create a prompt that clearly includes a Limits field."
+      }
+    },
+    {
+      "term": "Guardrails",
+      "stageId": 2,
+      "stageTitle": "Controlled Prompting",
+      "learningLevel": "Early Intermediate",
+      "meaning": "What ChatGPT should avoid or be careful about",
+      "synonyms": [
+        "Warnings",
+        "No-go rules",
+        "Hallucination warning",
+        "Red flags"
+      ],
+      "lessonSeed": {
+        "lessonGoal": "Teach learners how to use Guardrails as a prompt ingredient.",
+        "practicePrompt": "Create a prompt that clearly includes a Guardrails field."
+      }
+    },
+    {
+      "term": "Examples",
+      "stageId": 2,
+      "stageTitle": "Controlled Prompting",
+      "learningLevel": "Early Intermediate",
+      "meaning": "Samples that show what good looks like",
+      "synonyms": [
+        "Samples",
+        "References",
+        "Model answer",
+        "Style example"
+      ],
+      "lessonSeed": {
+        "lessonGoal": "Teach learners how to use Examples as a prompt ingredient.",
+        "practicePrompt": "Create a prompt that clearly includes a Examples field."
+      }
+    },
+    {
+      "term": "Detail",
+      "stageId": 2,
+      "stageTitle": "Controlled Prompting",
+      "learningLevel": "Early Intermediate",
+      "meaning": "Adding depth or specifics",
+      "synonyms": [
+        "Details",
+        "Add detail",
+        "Deepen",
+        "Demonstrate"
+      ],
+      "lessonSeed": {
+        "lessonGoal": "Teach learners how to use Detail as a prompt ingredient.",
+        "practicePrompt": "Create a prompt that clearly includes a Detail field."
+      }
+    },
+    {
+      "term": "Hook",
+      "stageId": 2,
+      "stageTitle": "Controlled Prompting",
+      "learningLevel": "Early Intermediate",
+      "meaning": "The opening that grabs attention",
+      "synonyms": [
+        "Opening",
+        "Headline",
+        "Attention grabber"
+      ],
+      "lessonSeed": {
+        "lessonGoal": "Teach learners how to use Hook as a prompt ingredient.",
+        "practicePrompt": "Create a prompt that clearly includes a Hook field."
+      }
+    },
+    {
+      "term": "Input Material",
+      "stageId": 3,
+      "stageTitle": "Working With Material",
+      "learningLevel": "Intermediate",
+      "meaning": "The content ChatGPT should use",
+      "synonyms": [
+        "Material",
+        "Input",
+        "Source",
+        "Document",
+        "Transcript",
+        "Notes"
+      ],
+      "lessonSeed": {
+        "lessonGoal": "Teach learners how to use Input Material as a prompt ingredient.",
+        "practicePrompt": "Create a prompt that clearly includes a Input Material field."
+      }
+    },
+    {
+      "term": "Summarization",
+      "stageId": 3,
+      "stageTitle": "Working With Material",
+      "learningLevel": "Intermediate",
+      "meaning": "Making something shorter and clearer",
+      "synonyms": [
+        "Summarize",
+        "Compress",
+        "Narrow",
+        "Main idea"
+      ],
+      "lessonSeed": {
+        "lessonGoal": "Teach learners how to use Summarization as a prompt ingredient.",
+        "practicePrompt": "Create a prompt that clearly includes a Summarization field."
+      }
+    },
+    {
+      "term": "Organization",
+      "stageId": 3,
+      "stageTitle": "Working With Material",
+      "learningLevel": "Intermediate",
+      "meaning": "Structuring messy information",
+      "synonyms": [
+        "Sort",
+        "Separate",
+        "Organize",
+        "Map",
+        "Parts",
+        "Structure"
+      ],
+      "lessonSeed": {
+        "lessonGoal": "Teach learners how to use Organization as a prompt ingredient.",
+        "practicePrompt": "Create a prompt that clearly includes a Organization field."
+      }
+    },
+    {
+      "term": "Chunking",
+      "stageId": 3,
+      "stageTitle": "Working With Material",
+      "learningLevel": "Intermediate",
+      "meaning": "Breaking large content into smaller pieces",
+      "synonyms": [
+        "Cut",
+        "Headline",
+        "Name",
+        "Keep order"
+      ],
+      "lessonSeed": {
+        "lessonGoal": "Teach learners how to use Chunking as a prompt ingredient.",
+        "practicePrompt": "Create a prompt that clearly includes a Chunking field."
+      }
+    },
+    {
+      "term": "Method",
+      "stageId": 3,
+      "stageTitle": "Working With Material",
+      "learningLevel": "Intermediate",
+      "meaning": "The process ChatGPT should follow",
+      "synonyms": [
+        "Approach",
+        "Workflow",
+        "Process",
+        "Steps"
+      ],
+      "lessonSeed": {
+        "lessonGoal": "Teach learners how to use Method as a prompt ingredient.",
+        "practicePrompt": "Create a prompt that clearly includes a Method field."
+      }
+    },
+    {
+      "term": "Teaching Level",
+      "stageId": 4,
+      "stageTitle": "Learning, Teaching, and Practice",
+      "learningLevel": "Upper Intermediate",
+      "meaning": "Adjusting explanation depth",
+      "synonyms": [
+        "Simple",
+        "Clear",
+        "Advanced",
+        "Layered",
+        "Expert",
+        "Level 1"
+      ],
+      "lessonSeed": {
+        "lessonGoal": "Teach learners how to use Teaching Level as a prompt ingredient.",
+        "practicePrompt": "Create a prompt that clearly includes a Teaching Level field."
+      }
+    },
+    {
+      "term": "Practice",
+      "stageId": 4,
+      "stageTitle": "Learning, Teaching, and Practice",
+      "learningLevel": "Upper Intermediate",
+      "meaning": "Testing or rehearsing with the user",
+      "synonyms": [
+        "Quiz",
+        "Test the user",
+        "Question",
+        "Active recall"
+      ],
+      "lessonSeed": {
+        "lessonGoal": "Teach learners how to use Practice as a prompt ingredient.",
+        "practicePrompt": "Create a prompt that clearly includes a Practice field."
+      }
+    },
+    {
+      "term": "Scenario",
+      "stageId": 4,
+      "stageTitle": "Learning, Teaching, and Practice",
+      "learningLevel": "Upper Intermediate",
+      "meaning": "Creating a simulated situation",
+      "synonyms": [
+        "Simulation",
+        "Roleplay",
+        "Create scenario"
+      ],
+      "lessonSeed": {
+        "lessonGoal": "Teach learners how to use Scenario as a prompt ingredient.",
+        "practicePrompt": "Create a prompt that clearly includes a Scenario field."
+      }
+    },
+    {
+      "term": "User Need",
+      "stageId": 4,
+      "stageTitle": "Learning, Teaching, and Practice",
+      "learningLevel": "Upper Intermediate",
+      "meaning": "The problem the user is trying to solve",
+      "synonyms": [
+        "Needs",
+        "Problem",
+        "Pain point"
+      ],
+      "lessonSeed": {
+        "lessonGoal": "Teach learners how to use User Need as a prompt ingredient.",
+        "practicePrompt": "Create a prompt that clearly includes a User Need field."
+      }
+    },
+    {
+      "term": "Evaluation",
+      "stageId": 5,
+      "stageTitle": "Improvement Loops",
+      "learningLevel": "Advanced Intermediate",
+      "meaning": "Judging the quality of an answer",
+      "synonyms": [
+        "Review",
+        "Assess",
+        "Rate",
+        "Score",
+        "Test",
+        "Check understanding"
+      ],
+      "lessonSeed": {
+        "lessonGoal": "Teach learners how to use Evaluation as a prompt ingredient.",
+        "practicePrompt": "Create a prompt that clearly includes a Evaluation field."
+      }
+    },
+    {
+      "term": "Feedback",
+      "stageId": 5,
+      "stageTitle": "Improvement Loops",
+      "learningLevel": "Advanced Intermediate",
+      "meaning": "Suggestions for improvement",
+      "synonyms": [
+        "Improve",
+        "Suggest",
+        "Offer improvements",
+        "Remediate"
+      ],
+      "lessonSeed": {
+        "lessonGoal": "Teach learners how to use Feedback as a prompt ingredient.",
+        "practicePrompt": "Create a prompt that clearly includes a Feedback field."
+      }
+    },
+    {
+      "term": "Refinement",
+      "stageId": 5,
+      "stageTitle": "Improvement Loops",
+      "learningLevel": "Advanced Intermediate",
+      "meaning": "Making the answer better",
+      "synonyms": [
+        "Refine",
+        "Optimize",
+        "Tune",
+        "Polish",
+        "Fix",
+        "Upgrade"
+      ],
+      "lessonSeed": {
+        "lessonGoal": "Teach learners how to use Refinement as a prompt ingredient.",
+        "practicePrompt": "Create a prompt that clearly includes a Refinement field."
+      }
+    },
+    {
+      "term": "Iteration",
+      "stageId": 5,
+      "stageTitle": "Improvement Loops",
+      "learningLevel": "Advanced Intermediate",
+      "meaning": "Improving through follow-up prompts",
+      "synonyms": [
+        "Loop",
+        "Prompt again",
+        "Continue",
+        "Build on the answer"
+      ],
+      "lessonSeed": {
+        "lessonGoal": "Teach learners how to use Iteration as a prompt ingredient.",
+        "practicePrompt": "Create a prompt that clearly includes a Iteration field."
+      }
+    },
+    {
+      "term": "Comparison",
+      "stageId": 6,
+      "stageTitle": "Analysis and Decision-Making",
+      "learningLevel": "Advanced",
+      "meaning": "Choosing between options",
+      "synonyms": [
+        "Compare",
+        "Rank",
+        "Prioritize",
+        "Keep the best",
+        "Pick"
+      ],
+      "lessonSeed": {
+        "lessonGoal": "Teach learners how to use Comparison as a prompt ingredient.",
+        "practicePrompt": "Create a prompt that clearly includes a Comparison field."
+      }
+    },
+    {
+      "term": "Trade-offs",
+      "stageId": 6,
+      "stageTitle": "Analysis and Decision-Making",
+      "learningLevel": "Advanced",
+      "meaning": "Upsides, downsides, and consequences",
+      "synonyms": [
+        "Pros and cons",
+        "Risks",
+        "Weaknesses",
+        "Objections"
+      ],
+      "lessonSeed": {
+        "lessonGoal": "Teach learners how to use Trade-offs as a prompt ingredient.",
+        "practicePrompt": "Create a prompt that clearly includes a Trade-offs field."
+      }
+    },
+    {
+      "term": "Decision",
+      "stageId": 6,
+      "stageTitle": "Analysis and Decision-Making",
+      "learningLevel": "Advanced",
+      "meaning": "Making a final recommendation",
+      "synonyms": [
+        "Recommendation",
+        "Winner",
+        "Final choice"
+      ],
+      "lessonSeed": {
+        "lessonGoal": "Teach learners how to use Decision as a prompt ingredient.",
+        "practicePrompt": "Create a prompt that clearly includes a Decision field."
+      }
+    },
+    {
+      "term": "Assumptions",
+      "stageId": 6,
+      "stageTitle": "Analysis and Decision-Making",
+      "learningLevel": "Advanced",
+      "meaning": "Things ChatGPT may be assuming",
+      "synonyms": [
+        "Hidden assumptions",
+        "Identify assumptions",
+        "Reflect assumptions"
+      ],
+      "lessonSeed": {
+        "lessonGoal": "Teach learners how to use Assumptions as a prompt ingredient.",
+        "practicePrompt": "Create a prompt that clearly includes a Assumptions field."
+      }
+    },
+    {
+      "term": "Perspective Shift",
+      "stageId": 6,
+      "stageTitle": "Analysis and Decision-Making",
+      "learningLevel": "Advanced",
+      "meaning": "Looking at something from a different viewpoint",
+      "synonyms": [
+        "Lens",
+        "Look through",
+        "Explain perspective",
+        "Angle",
+        "Note bias"
+      ],
+      "lessonSeed": {
+        "lessonGoal": "Teach learners how to use Perspective Shift as a prompt ingredient.",
+        "practicePrompt": "Create a prompt that clearly includes a Perspective Shift field."
+      }
+    },
+    {
+      "term": "Evidence",
+      "stageId": 7,
+      "stageTitle": "Research, Verification, and Critical Thinking",
+      "learningLevel": "Advanced",
+      "meaning": "Support for claims or conclusions",
+      "synonyms": [
+        "Sources",
+        "Proof",
+        "Support",
+        "Citations",
+        "Validation"
+      ],
+      "lessonSeed": {
+        "lessonGoal": "Teach learners how to use Evidence as a prompt ingredient.",
+        "practicePrompt": "Create a prompt that clearly includes a Evidence field."
+      }
+    },
+    {
+      "term": "Critical Thinking",
+      "stageId": 7,
+      "stageTitle": "Research, Verification, and Critical Thinking",
+      "learningLevel": "Advanced",
+      "meaning": "Challenging the answer or idea",
+      "synonyms": [
+        "Red-team",
+        "Challenge",
+        "Find the opposite",
+        "Attack weaknesses",
+        "Test assumptions"
+      ],
+      "lessonSeed": {
+        "lessonGoal": "Teach learners how to use Critical Thinking as a prompt ingredient.",
+        "practicePrompt": "Create a prompt that clearly includes a Critical Thinking field."
+      }
+    },
+    {
+      "term": "Confidence",
+      "stageId": 7,
+      "stageTitle": "Research, Verification, and Critical Thinking",
+      "learningLevel": "Advanced",
+      "meaning": "How certain the answer is",
+      "synonyms": [
+        "Your confidence",
+        "Certainty",
+        "Confidence score"
+      ],
+      "lessonSeed": {
+        "lessonGoal": "Teach learners how to use Confidence as a prompt ingredient.",
+        "practicePrompt": "Create a prompt that clearly includes a Confidence field."
+      }
+    }
+  ],
+  "acronymIndex": [
+    {
+      "acronym": "CATS",
+      "stageId": 1,
+      "stageTitle": "Beginner Foundations",
+      "learningLevel": "Beginner",
+      "expansion": [
+        {
+          "word": "Context",
+          "normalizedTerm": "Context"
+        },
+        {
+          "word": "Audience",
+          "normalizedTerm": "Audience"
+        },
+        {
+          "word": "Tone",
+          "normalizedTerm": "Tone"
+        },
+        {
+          "word": "Structure",
+          "normalizedTerm": "Format"
+        }
+      ],
+      "teachingUse": "Use this acronym as a lesson-ready prompt template for the stage shown. Each expansion word can become a prompt field or mini-lesson."
+    },
+    {
+      "acronym": "CRAP",
+      "stageId": 1,
+      "stageTitle": "Beginner Foundations",
+      "learningLevel": "Beginner",
+      "expansion": [
+        {
+          "word": "Context",
+          "normalizedTerm": "Context"
+        },
+        {
+          "word": "Restrictions",
+          "normalizedTerm": "Limits"
+        },
+        {
+          "word": "Aim",
+          "normalizedTerm": "Goal"
+        },
+        {
+          "word": "Persona",
+          "normalizedTerm": "Role"
+        }
+      ],
+      "teachingUse": "Use this acronym as a lesson-ready prompt template for the stage shown. Each expansion word can become a prompt field or mini-lesson."
+    },
+    {
+      "acronym": "FAST",
+      "stageId": 1,
+      "stageTitle": "Beginner Foundations",
+      "learningLevel": "Beginner",
+      "expansion": [
+        {
+          "word": "Format",
+          "normalizedTerm": "Format"
+        },
+        {
+          "word": "Audience",
+          "normalizedTerm": "Audience"
+        },
+        {
+          "word": "Style",
+          "normalizedTerm": "Tone"
+        },
+        {
+          "word": "Task",
+          "normalizedTerm": "Task"
+        }
+      ],
+      "teachingUse": "Use this acronym as a lesson-ready prompt template for the stage shown. Each expansion word can become a prompt field or mini-lesson."
+    },
+    {
+      "acronym": "MEOW",
+      "stageId": 2,
+      "stageTitle": "Controlled Prompting",
+      "learningLevel": "Early Intermediate",
+      "expansion": [
+        {
+          "word": "Mission",
+          "normalizedTerm": "Goal"
+        },
+        {
+          "word": "Examples",
+          "normalizedTerm": "Examples"
+        },
+        {
+          "word": "Output",
+          "normalizedTerm": "Result"
+        },
+        {
+          "word": "Warnings",
+          "normalizedTerm": "Guardrails"
+        }
+      ],
+      "teachingUse": "Use this acronym as a lesson-ready prompt template for the stage shown. Each expansion word can become a prompt field or mini-lesson."
+    },
+    {
+      "acronym": "PAWS",
+      "stageId": 2,
+      "stageTitle": "Controlled Prompting",
+      "learningLevel": "Early Intermediate",
+      "expansion": [
+        {
+          "word": "Persona",
+          "normalizedTerm": "Role"
+        },
+        {
+          "word": "Ask",
+          "normalizedTerm": "Task"
+        },
+        {
+          "word": "Warnings",
+          "normalizedTerm": "Guardrails"
+        },
+        {
+          "word": "Structure",
+          "normalizedTerm": "Format"
+        }
+      ],
+      "teachingUse": "Use this acronym as a lesson-ready prompt template for the stage shown. Each expansion word can become a prompt field or mini-lesson."
+    },
+    {
+      "acronym": "TREAT",
+      "stageId": 2,
+      "stageTitle": "Controlled Prompting",
+      "learningLevel": "Early Intermediate",
+      "expansion": [
+        {
+          "word": "Task",
+          "normalizedTerm": "Task"
+        },
+        {
+          "word": "Role",
+          "normalizedTerm": "Role"
+        },
+        {
+          "word": "Examples",
+          "normalizedTerm": "Examples"
+        },
+        {
+          "word": "Audience",
+          "normalizedTerm": "Audience"
+        },
+        {
+          "word": "Tone",
+          "normalizedTerm": "Tone"
+        }
+      ],
+      "teachingUse": "Use this acronym as a lesson-ready prompt template for the stage shown. Each expansion word can become a prompt field or mini-lesson."
+    },
+    {
+      "acronym": "POWER",
+      "stageId": 2,
+      "stageTitle": "Controlled Prompting",
+      "learningLevel": "Early Intermediate",
+      "expansion": [
+        {
+          "word": "Persona",
+          "normalizedTerm": "Role"
+        },
+        {
+          "word": "Objective",
+          "normalizedTerm": "Goal"
+        },
+        {
+          "word": "Warnings",
+          "normalizedTerm": "Guardrails"
+        },
+        {
+          "word": "Examples",
+          "normalizedTerm": "Examples"
+        },
+        {
+          "word": "Result",
+          "normalizedTerm": "Result"
+        }
+      ],
+      "teachingUse": "Use this acronym as a lesson-ready prompt template for the stage shown. Each expansion word can become a prompt field or mini-lesson."
+    },
+    {
+      "acronym": "SNAP",
+      "stageId": 3,
+      "stageTitle": "Working With Material",
+      "learningLevel": "Intermediate",
+      "expansion": [
+        {
+          "word": "Summarize",
+          "normalizedTerm": "Summarization"
+        },
+        {
+          "word": "Narrow",
+          "normalizedTerm": "Summarization"
+        },
+        {
+          "word": "Apply",
+          "normalizedTerm": "Method"
+        },
+        {
+          "word": "Polish",
+          "normalizedTerm": "Refinement"
+        }
+      ],
+      "teachingUse": "Use this acronym as a lesson-ready prompt template for the stage shown. Each expansion word can become a prompt field or mini-lesson."
+    },
+    {
+      "acronym": "SORT",
+      "stageId": 3,
+      "stageTitle": "Working With Material",
+      "learningLevel": "Intermediate",
+      "expansion": [
+        {
+          "word": "Separate",
+          "normalizedTerm": "Organization"
+        },
+        {
+          "word": "Organize",
+          "normalizedTerm": "Organization"
+        },
+        {
+          "word": "Rank",
+          "normalizedTerm": "Comparison"
+        },
+        {
+          "word": "Transform",
+          "normalizedTerm": "Method"
+        }
+      ],
+      "teachingUse": "Use this acronym as a lesson-ready prompt template for the stage shown. Each expansion word can become a prompt field or mini-lesson."
+    },
+    {
+      "acronym": "CHUNK",
+      "stageId": 3,
+      "stageTitle": "Working With Material",
+      "learningLevel": "Intermediate",
+      "expansion": [
+        {
+          "word": "Cut",
+          "normalizedTerm": "Chunking"
+        },
+        {
+          "word": "Headline",
+          "normalizedTerm": "Chunking"
+        },
+        {
+          "word": "Understand",
+          "normalizedTerm": "Evaluation"
+        },
+        {
+          "word": "Name",
+          "normalizedTerm": "Chunking"
+        },
+        {
+          "word": "Keep order",
+          "normalizedTerm": "Chunking"
+        }
+      ],
+      "teachingUse": "Use this acronym as a lesson-ready prompt template for the stage shown. Each expansion word can become a prompt field or mini-lesson."
+    },
+    {
+      "acronym": "CLAW",
+      "stageId": 3,
+      "stageTitle": "Working With Material",
+      "learningLevel": "Intermediate",
+      "expansion": [
+        {
+          "word": "Context",
+          "normalizedTerm": "Context"
+        },
+        {
+          "word": "Limits",
+          "normalizedTerm": "Limits"
+        },
+        {
+          "word": "Audience",
+          "normalizedTerm": "Audience"
+        },
+        {
+          "word": "Workflow",
+          "normalizedTerm": "Method"
+        }
+      ],
+      "teachingUse": "Use this acronym as a lesson-ready prompt template for the stage shown. Each expansion word can become a prompt field or mini-lesson."
+    },
+    {
+      "acronym": "TUTOR",
+      "stageId": 4,
+      "stageTitle": "Learning, Teaching, and Practice",
+      "learningLevel": "Upper Intermediate",
+      "expansion": [
+        {
+          "word": "Teach",
+          "normalizedTerm": "Teaching Level"
+        },
+        {
+          "word": "Use examples",
+          "normalizedTerm": "Examples"
+        },
+        {
+          "word": "Test",
+          "normalizedTerm": "Practice"
+        },
+        {
+          "word": "Observe mistakes",
+          "normalizedTerm": "Evaluation"
+        },
+        {
+          "word": "Remediate",
+          "normalizedTerm": "Feedback"
+        }
+      ],
+      "teachingUse": "Use this acronym as a lesson-ready prompt template for the stage shown. Each expansion word can become a prompt field or mini-lesson."
+    },
+    {
+      "acronym": "QUIZ",
+      "stageId": 4,
+      "stageTitle": "Learning, Teaching, and Practice",
+      "learningLevel": "Upper Intermediate",
+      "expansion": [
+        {
+          "word": "Question",
+          "normalizedTerm": "Practice"
+        },
+        {
+          "word": "Understand answer",
+          "normalizedTerm": "Evaluation"
+        },
+        {
+          "word": "Identify gaps",
+          "normalizedTerm": "Evaluation"
+        },
+        {
+          "word": "Zoom deeper",
+          "normalizedTerm": "Detail"
+        }
+      ],
+      "teachingUse": "Use this acronym as a lesson-ready prompt template for the stage shown. Each expansion word can become a prompt field or mini-lesson."
+    },
+    {
+      "acronym": "SIM",
+      "stageId": 4,
+      "stageTitle": "Learning, Teaching, and Practice",
+      "learningLevel": "Upper Intermediate",
+      "expansion": [
+        {
+          "word": "Scenario",
+          "normalizedTerm": "Scenario"
+        },
+        {
+          "word": "Identity",
+          "normalizedTerm": "Role"
+        },
+        {
+          "word": "Mission",
+          "normalizedTerm": "Goal"
+        }
+      ],
+      "teachingUse": "Use this acronym as a lesson-ready prompt template for the stage shown. Each expansion word can become a prompt field or mini-lesson."
+    },
+    {
+      "acronym": "ACT",
+      "stageId": 4,
+      "stageTitle": "Learning, Teaching, and Practice",
+      "learningLevel": "Upper Intermediate",
+      "expansion": [
+        {
+          "word": "Assume role",
+          "normalizedTerm": "Role"
+        },
+        {
+          "word": "Create scenario",
+          "normalizedTerm": "Scenario"
+        },
+        {
+          "word": "Test the user",
+          "normalizedTerm": "Practice"
+        }
+      ],
+      "teachingUse": "Use this acronym as a lesson-ready prompt template for the stage shown. Each expansion word can become a prompt field or mini-lesson."
+    },
+    {
+      "acronym": "DRIFT",
+      "stageId": 5,
+      "stageTitle": "Improvement Loops",
+      "learningLevel": "Advanced Intermediate",
+      "expansion": [
+        {
+          "word": "Define",
+          "normalizedTerm": "Task"
+        },
+        {
+          "word": "Refine",
+          "normalizedTerm": "Refinement"
+        },
+        {
+          "word": "Iterate",
+          "normalizedTerm": "Iteration"
+        },
+        {
+          "word": "Feedback",
+          "normalizedTerm": "Feedback"
+        },
+        {
+          "word": "Tune",
+          "normalizedTerm": "Refinement"
+        }
+      ],
+      "teachingUse": "Use this acronym as a lesson-ready prompt template for the stage shown. Each expansion word can become a prompt field or mini-lesson."
+    },
+    {
+      "acronym": "LOOP",
+      "stageId": 5,
+      "stageTitle": "Improvement Loops",
+      "learningLevel": "Advanced Intermediate",
+      "expansion": [
+        {
+          "word": "Look",
+          "normalizedTerm": "Evaluation"
+        },
+        {
+          "word": "Observe",
+          "normalizedTerm": "Evaluation"
+        },
+        {
+          "word": "Optimize",
+          "normalizedTerm": "Refinement"
+        },
+        {
+          "word": "Prompt again",
+          "normalizedTerm": "Iteration"
+        }
+      ],
+      "teachingUse": "Use this acronym as a lesson-ready prompt template for the stage shown. Each expansion word can become a prompt field or mini-lesson."
+    },
+    {
+      "acronym": "ROAST",
+      "stageId": 5,
+      "stageTitle": "Improvement Loops",
+      "learningLevel": "Advanced Intermediate",
+      "expansion": [
+        {
+          "word": "Review",
+          "normalizedTerm": "Evaluation"
+        },
+        {
+          "word": "Observe",
+          "normalizedTerm": "Evaluation"
+        },
+        {
+          "word": "Assess",
+          "normalizedTerm": "Evaluation"
+        },
+        {
+          "word": "Suggest",
+          "normalizedTerm": "Feedback"
+        },
+        {
+          "word": "Transform",
+          "normalizedTerm": "Method"
+        }
+      ],
+      "teachingUse": "Use this acronym as a lesson-ready prompt template for the stage shown. Each expansion word can become a prompt field or mini-lesson."
+    },
+    {
+      "acronym": "REFINE",
+      "stageId": 5,
+      "stageTitle": "Improvement Loops",
+      "learningLevel": "Advanced Intermediate",
+      "expansion": [
+        {
+          "word": "Review",
+          "normalizedTerm": "Evaluation"
+        },
+        {
+          "word": "Evaluate",
+          "normalizedTerm": "Evaluation"
+        },
+        {
+          "word": "Fix",
+          "normalizedTerm": "Refinement"
+        },
+        {
+          "word": "Improve",
+          "normalizedTerm": "Feedback"
+        },
+        {
+          "word": "Narrow",
+          "normalizedTerm": "Summarization"
+        },
+        {
+          "word": "Explain",
+          "normalizedTerm": "Teaching Level"
+        }
+      ],
+      "teachingUse": "Use this acronym as a lesson-ready prompt template for the stage shown. Each expansion word can become a prompt field or mini-lesson."
+    },
+    {
+      "acronym": "RANK",
+      "stageId": 6,
+      "stageTitle": "Analysis and Decision-Making",
+      "learningLevel": "Advanced",
+      "expansion": [
+        {
+          "word": "Rate",
+          "normalizedTerm": "Evaluation"
+        },
+        {
+          "word": "Analyze",
+          "normalizedTerm": "Comparison"
+        },
+        {
+          "word": "Note trade-offs",
+          "normalizedTerm": "Trade-offs"
+        },
+        {
+          "word": "Keep the best",
+          "normalizedTerm": "Comparison"
+        }
+      ],
+      "teachingUse": "Use this acronym as a lesson-ready prompt template for the stage shown. Each expansion word can become a prompt field or mini-lesson."
+    },
+    {
+      "acronym": "PICK",
+      "stageId": 6,
+      "stageTitle": "Analysis and Decision-Making",
+      "learningLevel": "Advanced",
+      "expansion": [
+        {
+          "word": "Prioritize",
+          "normalizedTerm": "Comparison"
+        },
+        {
+          "word": "Inspect",
+          "normalizedTerm": "Evaluation"
+        },
+        {
+          "word": "Compare",
+          "normalizedTerm": "Comparison"
+        },
+        {
+          "word": "Keep",
+          "normalizedTerm": "Comparison"
+        }
+      ],
+      "teachingUse": "Use this acronym as a lesson-ready prompt template for the stage shown. Each expansion word can become a prompt field or mini-lesson."
+    },
+    {
+      "acronym": "TILT",
+      "stageId": 6,
+      "stageTitle": "Analysis and Decision-Making",
+      "learningLevel": "Advanced",
+      "expansion": [
+        {
+          "word": "Take another angle",
+          "normalizedTerm": "Perspective Shift"
+        },
+        {
+          "word": "Inspect",
+          "normalizedTerm": "Evaluation"
+        },
+        {
+          "word": "List trade-offs",
+          "normalizedTerm": "Trade-offs"
+        },
+        {
+          "word": "Test assumptions",
+          "normalizedTerm": "Critical Thinking"
+        }
+      ],
+      "teachingUse": "Use this acronym as a lesson-ready prompt template for the stage shown. Each expansion word can become a prompt field or mini-lesson."
+    },
+    {
+      "acronym": "LENS",
+      "stageId": 6,
+      "stageTitle": "Analysis and Decision-Making",
+      "learningLevel": "Advanced",
+      "expansion": [
+        {
+          "word": "Look through",
+          "normalizedTerm": "Perspective Shift"
+        },
+        {
+          "word": "Explain perspective",
+          "normalizedTerm": "Perspective Shift"
+        },
+        {
+          "word": "Note bias",
+          "normalizedTerm": "Perspective Shift"
+        },
+        {
+          "word": "Suggest insight",
+          "normalizedTerm": "Feedback"
+        }
+      ],
+      "teachingUse": "Use this acronym as a lesson-ready prompt template for the stage shown. Each expansion word can become a prompt field or mini-lesson."
+    },
+    {
+      "acronym": "CHECK",
+      "stageId": 7,
+      "stageTitle": "Research, Verification, and Critical Thinking",
+      "learningLevel": "Advanced",
+      "expansion": [
+        {
+          "word": "Context",
+          "normalizedTerm": "Context"
+        },
+        {
+          "word": "Hallucination warning",
+          "normalizedTerm": "Guardrails"
+        },
+        {
+          "word": "Evidence",
+          "normalizedTerm": "Evidence"
+        },
+        {
+          "word": "Constraints",
+          "normalizedTerm": "Limits"
+        },
+        {
+          "word": "Keep format",
+          "normalizedTerm": "Format"
+        }
+      ],
+      "teachingUse": "Use this acronym as a lesson-ready prompt template for the stage shown. Each expansion word can become a prompt field or mini-lesson."
+    },
+    {
+      "acronym": "VERIFY",
+      "stageId": 7,
+      "stageTitle": "Research, Verification, and Critical Thinking",
+      "learningLevel": "Advanced",
+      "expansion": [
+        {
+          "word": "Validate",
+          "normalizedTerm": "Evidence"
+        },
+        {
+          "word": "Evidence",
+          "normalizedTerm": "Evidence"
+        },
+        {
+          "word": "Red flags",
+          "normalizedTerm": "Guardrails"
+        },
+        {
+          "word": "Identify assumptions",
+          "normalizedTerm": "Assumptions"
+        },
+        {
+          "word": "Format",
+          "normalizedTerm": "Format"
+        },
+        {
+          "word": "Your confidence",
+          "normalizedTerm": "Confidence"
+        }
+      ],
+      "teachingUse": "Use this acronym as a lesson-ready prompt template for the stage shown. Each expansion word can become a prompt field or mini-lesson."
+    },
+    {
+      "acronym": "FLIP",
+      "stageId": 7,
+      "stageTitle": "Research, Verification, and Critical Thinking",
+      "learningLevel": "Advanced",
+      "expansion": [
+        {
+          "word": "Find the opposite",
+          "normalizedTerm": "Critical Thinking"
+        },
+        {
+          "word": "List objections",
+          "normalizedTerm": "Trade-offs"
+        },
+        {
+          "word": "Identify weaknesses",
+          "normalizedTerm": "Critical Thinking"
+        },
+        {
+          "word": "Propose alternatives",
+          "normalizedTerm": "Decision"
+        }
+      ],
+      "teachingUse": "Use this acronym as a lesson-ready prompt template for the stage shown. Each expansion word can become a prompt field or mini-lesson."
+    },
+    {
+      "acronym": "DEBATE",
+      "stageId": 7,
+      "stageTitle": "Research, Verification, and Critical Thinking",
+      "learningLevel": "Advanced",
+      "expansion": [
+        {
+          "word": "Define sides",
+          "normalizedTerm": "Critical Thinking"
+        },
+        {
+          "word": "Evidence",
+          "normalizedTerm": "Evidence"
+        },
+        {
+          "word": "Best arguments",
+          "normalizedTerm": "Evidence"
+        },
+        {
+          "word": "Attack weaknesses",
+          "normalizedTerm": "Critical Thinking"
+        },
+        {
+          "word": "Test conclusion",
+          "normalizedTerm": "Critical Thinking"
+        },
+        {
+          "word": "Explain winner",
+          "normalizedTerm": "Decision"
+        }
+      ],
+      "teachingUse": "Use this acronym as a lesson-ready prompt template for the stage shown. Each expansion word can become a prompt field or mini-lesson."
+    }
+  ]
+}

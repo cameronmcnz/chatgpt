@@ -1,0 +1,71 @@
+---
+layout: default
+---
+
+<section class="py-5 section-space">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-xl-9">
+        <article class="lesson-shell reveal-up{% if page.path contains '/acronyms/' %} acronym-lesson{% endif %}">
+          <header class="mb-4">
+            <h1 class="display-6 fw-bold mb-3">{{ page.title }}</h1>
+            {% if page.description or page.excerpt %}
+              <p class="lead text-muted mb-3">{{ page.description | default: page.excerpt }}</p>
+            {% endif %}
+            <div class="d-flex flex-wrap gap-2">
+              {% for category in page.categories %}
+                <span class="badge rounded-pill badge-soft">{{ category }}</span>
+              {% endfor %}
+              {% for tag in page.tags %}
+                <span class="badge rounded-pill text-bg-light border">{{ tag }}</span>
+              {% endfor %}
+            </div>
+          </header>
+
+          <div class="lesson-content">{{ content }}</div>
+        </article>
+
+        <div class="d-flex flex-wrap gap-2 justify-content-between mt-4">
+          {% assign path_parts = page.path | split: '/' %}
+          {% assign folder_1 = path_parts[0] %}
+          {% assign folder_2 = path_parts[1] %}
+
+          {% if folder_1 contains 'day-0' %}
+            <a class="btn btn-outline-brand" href="{{ '/' | append: folder_1 | append: '/' | relative_url }}"><i class="lni lni-arrow-left me-2"></i>Back to {{ folder_1 | replace: '-', ' ' | capitalize }}</a>
+          {% elsif folder_1 == 'prompt-engineering' and folder_2 contains 'stage-' %}
+            <a class="btn btn-outline-brand" href="{{ '/prompt-engineering/' | relative_url }}"><i class="lni lni-arrow-left me-2"></i>Back to Prompt Engineering</a>
+          {% endif %}
+
+          {% if folder_1 == 'prompt-engineering' and folder_2 contains 'stage-' %}
+            <a class="btn btn-outline-secondary" href="{{ '/prompt-engineering/' | append: folder_2 | append: '/' | relative_url }}">Back to {{ folder_2 | replace: '-', ' ' | capitalize }}</a>
+          {% endif %}
+        </div>
+
+        {% assign siblings = site.pages | where: 'dir', page.dir | sort: 'path' %}
+        {% assign sibling_index = -1 %}
+        {% for sib in siblings %}
+          {% if sib.path == page.path %}
+            {% assign sibling_index = forloop.index0 %}
+          {% endif %}
+        {% endfor %}
+
+        {% if sibling_index >= 0 %}
+          <div class="d-flex flex-wrap justify-content-between gap-2 mt-3">
+            {% if sibling_index > 0 %}
+              {% assign prev_i = sibling_index | minus: 1 %}
+              <a class="btn btn-sm btn-light border" href="{{ siblings[prev_i].url | relative_url }}"><i class="lni lni-chevron-left me-1"></i>{{ siblings[prev_i].title | default: 'Previous' }}</a>
+            {% else %}
+              <span></span>
+            {% endif %}
+
+            {% assign sibling_last = siblings.size | minus: 1 %}
+            {% if sibling_index < sibling_last %}
+              {% assign next_i = sibling_index | plus: 1 %}
+              <a class="btn btn-sm btn-light border" href="{{ siblings[next_i].url | relative_url }}">{{ siblings[next_i].title | default: 'Next' }}<i class="lni lni-chevron-right ms-1"></i></a>
+            {% endif %}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>

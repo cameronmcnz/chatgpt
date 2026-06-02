@@ -1,0 +1,59 @@
+---
+layout: default
+---
+
+<section class="hero-wrap hero-small py-5">
+  <div class="container py-4">
+    <span class="badge badge-brand rounded-pill mb-3">Prompt Engineering Hub</span>
+    <h1 class="display-5 fw-bold mb-3">{{ page.title }}</h1>
+    <p class="lead text-white-75 mb-0">{{ page.description | default: page.excerpt }}</p>
+  </div>
+</section>
+
+<section class="py-5 section-space">
+  <div class="container">
+    <div class="row g-4 mb-4">
+      <div class="col-md-6 reveal-up">
+        <div class="feature-box h-100">
+          <i class="lni lni-book feature-icon text-cyan"></i>
+          <h2 class="h5">Prompt Terms</h2>
+          <p class="text-muted">Understand each prompt ingredient so you can fix weak prompts quickly.</p>
+          <a href="{{ '/prompt-engineering/terms/' | relative_url }}">Explore term lessons</a>
+        </div>
+      </div>
+      <div class="col-md-6 reveal-up">
+        <div class="feature-box h-100">
+          <i class="lni lni-bolt feature-icon"></i>
+          <h2 class="h5">Template Frameworks</h2>
+          <p class="text-muted">Use memorable structures to get better responses in less time.</p>
+          <a href="{{ '/prompt-engineering/acronyms/' | relative_url }}">Explore prompt template lessons</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card card-soft reveal-up">
+      <div class="card-body p-4">{{ content }}</div>
+    </div>
+  </div>
+</section>
+
+<section class="pb-5">
+  <div class="container">
+    <h2 class="h3 mb-4">Prompt Engineering Stages</h2>
+    <div class="row g-4">
+      {% assign stage_hubs = site.pages | where_exp: "p", "p.path contains 'prompt-engineering/stage-'" | where_exp: "p", "p.path contains '/index.md'" | sort: "path" %}
+      {% for stage in stage_hubs %}
+        <div class="col-md-6 col-xl-4 reveal-up">
+          <div class="card card-soft h-100">
+            <div class="card-body d-flex flex-column">
+              <span class="badge rounded-pill badge-soft w-fit mb-2">{{ stage.stage_label | default: stage.title }}</span>
+              <h3 class="h5">{{ stage.title }}</h3>
+              <p class="text-muted small">{{ stage.description | default: stage.excerpt }}</p>
+              <a class="mt-auto" href="{{ stage.url | relative_url }}">Open stage <i class="lni lni-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
